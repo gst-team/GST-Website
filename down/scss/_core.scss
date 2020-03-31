@@ -1,0 +1,305 @@
+/********************************************************************
+	ZYPOP 
+	FREE WEB TEMPLATES
+********************************************************************/
+
+
+/**
+This file contains the core CSS for this template, built on the Bootstrap framework 
+Set the variable values in _variables.scss 
+**/
+
+
+/** 
+Page structure and elements 
+**/
+.bg-primary {
+    background-color: $primary !important;
+}
+
+
+body, .header-wrap, main { 
+    background-color: $white;	
+}
+
+main {
+	padding-top: 1em;
+}
+.text-primary {
+    color: $primary !important;
+}
+
+a, .page-link {
+    color: $secondary;
+    font-weight: bold;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($secondary, 15%);
+    }
+}
+
+fieldset { 
+    margin-bottom: $spacer; 
+    display: block;
+    border-top: 1px solid #ccc;
+}
+fieldset legend { 
+    width: auto;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+table th { 
+    background-color: $secondary;
+    color: $white;
+	border-color:darken($secondary, 15%) !important;
+	border-bottom: 1px solid darken($secondary, 15%);
+}
+
+blockquote {
+    display: block;
+    border-left: 5px solid #ccc;
+    padding: 0.5rem;
+	color: #666;
+    margin-bottom: $spacer;
+
+}
+.btn { 
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    color: #333;
+    font-weight: bold;
+}
+
+/** 
+Jumbotron / Slider
+**/
+.jumbotron, .jumbotron-wrap { 
+    background-color: $content-bg-color; 
+}
+
+.jumbotron-narrow { 
+    padding: $jumbotron-padding;
+}
+.jumbotron { 
+        margin-bottom: 0; 
+}
+
+
+
+/**
+Header 
+**/
+header h1 {
+	color: $secondary;
+	font-size: 4rem;
+	line-height: 1.4rem;
+	letter-spacing: -0.2rem;
+}
+
+.header-wrap { 
+    padding: 4rem 0; 
+}
+
+.header-social-icons, header h1 { 
+    margin-bottom: 0; 
+}
+
+.header-social-icons a {
+    color: lighten($primary, 80%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 60%);
+    }
+}
+
+
+
+
+/** 
+Navbar 
+**/
+.navbar-toggler {
+	margin: 0.5rem;
+}
+
+.navbar {
+	padding: 0 1rem;
+}
+
+.navbar .active .nav-link {
+	background-color: $secondary;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-nav .dropdown-item
+ {
+     color: #f8f8f8;
+     font-weight: bold;
+     padding: 1rem 2rem !important;
+     font-size: 1.2rem;
+}
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus,
+.navbar-nav .dropdown-item:active,
+.navbar-nav .dropdown-item.active {
+	background-color: $secondary;
+    color: $white;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    margin:0;
+    padding: 0;
+}
+
+.dropdown-divider {
+	border-color: $black;
+}
+
+
+/**
+Footer
+**/
+footer { 
+	background-color: $primary;
+    color: lighten($primary, 40%);
+	font-size: 0.9rem;
+
+}
+.footer-lists {
+	background-color: lighten($primary, 5%);
+	padding: 2rem;
+	margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    color: lighten($primary, 20%);
+}
+
+.footer-bottom  a {
+    color: lighten($primary, 30%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 40%);
+    }
+}
+
+.footer-lists h4 {
+    color: lighten($primary, 70%);
+}
+
+.social-icons  a {
+    margin-right: 15px;
+}
+.footer-lists ul {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-lists ul li {
+	padding: 0.1rem 0;
+}
+footer p {
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
+footer  a {
+    color: lighten($primary, 40%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 60%);
+    }
+}
+
+
+
+/** 
+Articles
+**/
+article {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid $gray-300;
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+article h2.article-title {
+	font-size: 3rem;
+	margin-bottom: 0;
+	letter-spacing: -2px;
+}
+
+article p.article-meta {
+	color: #ccc;
+	font-size: 1rem;
+}
+
+
+/**
+Sidebar
+**/
+.sidebar-box {
+	margin-bottom: 2rem; 
+}
+.sidebar-box-bg {
+	padding: 1rem;
+	background-color: $content-bg-color;
+	border-radius: $border-radius;
+}
+
+
+
+
+/***
+Better nesting of list groups
+***/
+.list-group-item { 
+    border: none !important; 
+}
+
+.list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 2;
+}
+
+.list-group .list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 3;
+}
+
+.list-group .list-group .list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 4;
+}
+
+.list-group > .list-group .list-group-item:first-child,
+.list-group > .list-group .list-group-item:last-child {
+	border-radius: 0 !important;
+}
+.list-group > .list-group .list-group-item:last-child {
+	border-bottom: none !important;
+}
+.list-group-item:first-child { 
+    border-radius: 0;
+}
+
+.list-group-root { 
+    background-color: $content-bg-color; 
+    padding: 1rem;
+    border-radius: $border-radius;
+}
+.list-group-item {
+    background-color: $content-bg-color; 
+
+}
+
+.list-group-item.active {
+    border-radius: $border-radius;
+}
